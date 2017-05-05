@@ -29,7 +29,7 @@ RUN pecl install imagick && docker-php-ext-enable imagick
 RUN curl -sSL https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
-# Install Xdebug
+# Install Xdebugg
 RUN curl -fsSL 'https://xdebug.org/files/xdebug-2.4.0.tgz' -o xdebug.tar.gz \
     && mkdir -p xdebug \
     && tar -xf xdebug.tar.gz -C xdebug --strip-components=1 \
